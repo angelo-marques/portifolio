@@ -50,7 +50,7 @@ import { TranslateService } from '../../services/translate.service';
               </div>
               <div>
                 <h4>{{ translate.t('contact.location') }}</h4>
-                <span>Praia de Carapebus, Serra/ES - Brasil</span>
+                <span>ES - Brasil</span>
               </div>
             </div>
 
@@ -93,7 +93,7 @@ import { TranslateService } from '../../services/translate.service';
   "role": "Tech Lead | Sr. Developer",
   "email": "angelomarquesdeoliveira&#64;gmail.com",
   "phone": "+55 27 99784-0733",
-  "location": "Serra/ES, Brasil",
+  "location": "ES, Brasil",
   "available": true,
   "open_to": [
     "Tech Lead",
@@ -122,3 +122,4 @@ import { TranslateService } from '../../services/translate.service';
 export class ContactComponent {
   translate = inject(TranslateService);
 }
+
