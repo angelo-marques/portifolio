@@ -214,26 +214,27 @@ export class SkillsComponent {
 
   repositories: RepoReference[] = [
     {
-      name: 'awesome-dotnet-core',
+      name: 'portifolio',
       description:
-        'Coleção com bibliotecas, ferramentas e boas práticas para projetos .NET modernos.',
-      stack: '.NET • APIs • Arquitetura',
-      link: 'https://github.com/thangchung/awesome-dotnet-core',
+        'Meu portfólio profissional com foco em UI moderna, storytelling técnico e experiência interativa.',
+      stack: 'Angular • TypeScript • SCSS',
+      link: 'https://github.com/angelo-marques/portifolio',
       image: 'images/repo-dotnet.svg',
     },
     {
-      name: 'LangChain',
+      name: 'Projetos de IA (em evolução)',
       description:
-        'Referência para construção de aplicações com LLM, agentes e fluxos de IA avançados.',
-      stack: 'LLM • Agents • RAG',
-      link: 'https://github.com/langchain-ai/langchain',
+        'Repositórios autorais com estudos e protótipos em agentes, LLMs e automações aplicadas ao negócio.',
+      stack: 'AI • LLM • Automation',
+      link: 'https://github.com/angelo-marques?tab=repositories',
       image: 'images/repo-ai.svg',
     },
     {
-      name: 'Azure Architecture Center',
-      description: 'Padrões de arquitetura cloud e integrações para escalar soluções corporativas.',
-      stack: 'Cloud • DevOps • Microservices',
-      link: 'https://github.com/mspnp/architecture-center',
+      name: 'Projetos Cloud e Arquitetura',
+      description:
+        'Conjunto de projetos próprios com foco em arquitetura escalável, integrações e boas práticas corporativas.',
+      stack: 'Cloud • DevOps • Architecture',
+      link: 'https://github.com/angelo-marques?tab=repositories',
       image: 'images/repo-cloud.svg',
     },
   ];
