@@ -7,6 +7,14 @@ interface SkillCategory {
   skills: { name: string; level: number }[];
 }
 
+interface RepoReference {
+  name: string;
+  description: string;
+  stack: string;
+  link: string;
+  image: string;
+}
+
 @Component({
   selector: 'app-skills',
   standalone: true,
@@ -44,6 +52,45 @@ interface SkillCategory {
           }
         </div>
 
+        <div class="ai-showcase">
+          <div class="ai-content">
+            <h3>{{ translate.t('skills.aiShowcaseTitle') }}</h3>
+            <p>{{ translate.t('skills.aiShowcaseDescription') }}</p>
+            <div class="ai-tags">
+              @for (tag of aiFocusTags; track tag) {
+                <span>{{ tag }}</span>
+              }
+            </div>
+          </div>
+          <div class="ai-images">
+            @for (image of aiGallery; track image.alt) {
+              <figure class="image-card">
+                <img [src]="image.src" [alt]="image.alt" loading="lazy" />
+                <figcaption>{{ image.alt }}</figcaption>
+              </figure>
+            }
+          </div>
+        </div>
+
+        <div class="repos-section">
+          <h3 class="repos-title">{{ translate.t('skills.referenceRepos') }}</h3>
+          <div class="repos-grid">
+            @for (repo of repositories; track repo.name) {
+              <article class="repo-card">
+                <img class="repo-image" [src]="repo.image" [alt]="repo.name" loading="lazy" />
+                <div class="repo-body">
+                  <h4>{{ repo.name }}</h4>
+                  <p>{{ repo.description }}</p>
+                  <span class="repo-stack">{{ repo.stack }}</span>
+                  <a [href]="repo.link" target="_blank" rel="noopener noreferrer"
+                    >{{ translate.t('skills.seeRepo') }} →</a
+                  >
+                </div>
+              </article>
+            }
+          </div>
+        </div>
+
         <div class="soft-skills-section">
           <h3 class="soft-title">{{ translate.t('skills.softSkills') }}</h3>
           <div class="soft-tags">
@@ -55,7 +102,7 @@ interface SkillCategory {
       </div>
     </section>
   `,
-  styleUrl: './skills.scss'
+  styleUrl: './skills.scss',
 })
 export class SkillsComponent {
   translate = inject(TranslateService);
@@ -70,8 +117,8 @@ export class SkillsComponent {
         { name: 'Entity Framework / LINQ', level: 92 },
         { name: 'Blazor / Razor', level: 85 },
         { name: 'Node.js', level: 75 },
-        { name: 'Java', level: 65 }
-      ]
+        { name: 'Java', level: 65 },
+      ],
     },
     {
       key: 'frontend',
@@ -82,8 +129,8 @@ export class SkillsComponent {
         { name: 'JavaScript', level: 92 },
         { name: 'React', level: 75 },
         { name: 'Bootstrap', level: 90 },
-        { name: 'Xamarin', level: 70 }
-      ]
+        { name: 'Xamarin', level: 70 },
+      ],
     },
     {
       key: 'database',
@@ -94,8 +141,8 @@ export class SkillsComponent {
         { name: 'MySQL', level: 85 },
         { name: 'MongoDB', level: 78 },
         { name: 'Cosmos DB', level: 75 },
-        { name: 'SQLite / Dapper', level: 80 }
-      ]
+        { name: 'SQLite / Dapper', level: 80 },
+      ],
     },
     {
       key: 'cloud',
@@ -106,8 +153,8 @@ export class SkillsComponent {
         { name: 'AWS', level: 75 },
         { name: 'Google Cloud (GCP)', level: 72 },
         { name: 'RabbitMQ / Kafka', level: 82 },
-        { name: 'CI/CD Pipelines', level: 88 }
-      ]
+        { name: 'CI/CD Pipelines', level: 88 },
+      ],
     },
     {
       key: 'tools',
@@ -118,8 +165,8 @@ export class SkillsComponent {
         { name: 'Azure DevOps / Jira', level: 90 },
         { name: 'Postman / Swagger', level: 92 },
         { name: 'Figma / Draw.io', level: 80 },
-        { name: 'Cypress / SonarQube', level: 82 }
-      ]
+        { name: 'Cypress / SonarQube', level: 82 },
+      ],
     },
     {
       key: 'ai',
@@ -130,16 +177,65 @@ export class SkillsComponent {
         { name: 'AI Agents', level: 75 },
         { name: 'OCR (GdPicture/ImageGear)', level: 82 },
         { name: 'AI-Powered Error Handling', level: 78 },
-        { name: 'SAP GUI Automation', level: 85 }
-      ]
-    }
+        { name: 'SAP GUI Automation', level: 85 },
+      ],
+    },
   ];
 
   softSkills = [
-    'Dinamismo', 'Comprometimento', 'Iniciativa', 'Proatividade',
-    'Responsabilidade', 'Lideranca', 'Scrum Master', 'Mentoria',
-    'Comunicacao', 'Pensamento Analitico', 'Gestao de Equipe',
-    'Resolucao de Problemas', 'Clean Code', 'Code Review',
-    'TDD', 'DDD', 'BDD', 'SOLID', 'CQRS', 'Clean Architecture'
+    'Dinamismo',
+    'Comprometimento',
+    'Iniciativa',
+    'Proatividade',
+    'Responsabilidade',
+    'Lideranca',
+    'Scrum Master',
+    'Mentoria',
+    'Comunicacao',
+    'Pensamento Analitico',
+    'Gestao de Equipe',
+    'Resolucao de Problemas',
+    'Clean Code',
+    'Code Review',
+    'TDD',
+    'DDD',
+    'BDD',
+    'SOLID',
+    'CQRS',
+    'Clean Architecture',
+  ];
+
+  aiFocusTags = ['LLM Apps', 'RAG', 'Vision AI', 'AI Agents', 'Prompt Engineering', 'Automation'];
+
+  aiGallery = [
+    { src: 'images/ai-architecture.svg', alt: 'Arquitetura de IA com APIs e agentes' },
+    { src: 'images/ai-analytics.svg', alt: 'Dashboard inteligente para insights de negócio' },
+  ];
+
+  repositories: RepoReference[] = [
+    {
+      name: 'portifolio',
+      description:
+        'Meu portfólio profissional com foco em UI moderna, storytelling técnico e experiência interativa.',
+      stack: 'Angular • TypeScript • SCSS',
+      link: 'https://github.com/angelo-marques/portifolio',
+      image: 'images/repo-dotnet.svg',
+    },
+    {
+      name: 'Projetos de IA (em evolução)',
+      description:
+        'Repositórios autorais com estudos e protótipos em agentes, LLMs e automações aplicadas ao negócio.',
+      stack: 'AI • LLM • Automation',
+      link: 'https://github.com/angelo-marques?tab=repositories',
+      image: 'images/repo-ai.svg',
+    },
+    {
+      name: 'Projetos Cloud e Arquitetura',
+      description:
+        'Conjunto de projetos próprios com foco em arquitetura escalável, integrações e boas práticas corporativas.',
+      stack: 'Cloud • DevOps • Architecture',
+      link: 'https://github.com/angelo-marques?tab=repositories',
+      image: 'images/repo-cloud.svg',
+    },
   ];
 }

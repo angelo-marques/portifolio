@@ -45,7 +45,11 @@
     "tools": "Ferramentas",
     "methodologies": "Metodologias",
     "softSkills": "Soft Skills",
-    "ai": "Inteligencia Artificial"
+    "ai": "Inteligencia Artificial",
+    "aiShowcaseTitle": "Inovacao com Inteligencia Artificial",
+    "aiShowcaseDescription": "Desenvolvimento de solucoes inteligentes com LLMs, visao computacional e automacoes para ganhar produtividade, reduzir erros e gerar mais valor para o negocio.",
+    "referenceRepos": "Repositorios de referencia",
+    "seeRepo": "Ver repositorio"
   },
   "experience": {
     "title": "Experiencia Profissional",
