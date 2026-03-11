@@ -1,0 +1,14 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="24" fill="#070B1A"/>
+  <rect x="40" y="40" width="720" height="420" rx="20" fill="#101A34" stroke="#7B68EE" stroke-opacity="0.3"/>
+  <text x="70" y="95" fill="#E8E4FF" font-size="28" font-family="Arial">AI Business Insights</text>
+  <rect x="70" y="130" width="300" height="130" rx="14" fill="#131F3F" stroke="#00F3FF" stroke-opacity="0.3"/>
+  <polyline points="95,230 150,205 200,212 250,175 320,155" fill="none" stroke="#00F3FF" stroke-width="4"/>
+  <rect x="400" y="130" width="320" height="130" rx="14" fill="#131F3F" stroke="#00FF88" stroke-opacity="0.35"/>
+  <circle cx="460" cy="195" r="35" fill="#00FF88" fill-opacity="0.18"/>
+  <circle cx="545" cy="195" r="22" fill="#00F3FF" fill-opacity="0.2"/>
+  <circle cx="620" cy="195" r="48" fill="#7B68EE" fill-opacity="0.23"/>
+  <rect x="70" y="285" width="650" height="140" rx="14" fill="#0C1530" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <text x="95" y="334" fill="#A9B6D8" font-size="22" font-family="Arial">• Recomendações automáticas por IA</text>
+  <text x="95" y="370" fill="#A9B6D8" font-size="22" font-family="Arial">• Alertas preditivos e inteligência operacional</text>
+</svg>
