@@ -1,0 +1,15 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="24" fill="#0A0F23"/>
+  <rect x="38" y="40" width="724" height="420" rx="20" fill="#111A36" stroke="#00F3FF" stroke-opacity="0.25"/>
+  <circle cx="155" cy="250" r="70" fill="#00F3FF" fill-opacity="0.15" stroke="#00F3FF"/>
+  <text x="121" y="255" fill="#D8FFFF" font-size="22" font-family="Arial">API</text>
+  <circle cx="400" cy="160" r="82" fill="#7B68EE" fill-opacity="0.25" stroke="#9587FF"/>
+  <text x="360" y="166" fill="#F0ECFF" font-size="22" font-family="Arial">LLM</text>
+  <circle cx="625" cy="250" r="70" fill="#00FF88" fill-opacity="0.2" stroke="#00FF88"/>
+  <text x="579" y="255" fill="#D9FFE7" font-size="20" font-family="Arial">Agents</text>
+  <path d="M225 230L318 187" stroke="#00F3FF" stroke-width="4" stroke-dasharray="8 8"/>
+  <path d="M481 190L556 225" stroke="#C8BCFF" stroke-width="4" stroke-dasharray="8 8"/>
+  <rect x="260" y="310" width="280" height="100" rx="14" fill="#0B122D" stroke="#FFFFFF" stroke-opacity="0.14"/>
+  <text x="300" y="350" fill="#A8B4D8" font-size="20" font-family="Arial">RAG + Automação</text>
+  <text x="243" y="80" fill="#A8B4D8" font-size="28" font-family="Arial">Arquitetura IA</text>
+</svg>

@@ -45,7 +45,11 @@
     "tools": "Tools",
     "methodologies": "Methodologies",
     "softSkills": "Soft Skills",
-    "ai": "Artificial Intelligence"
+    "ai": "Artificial Intelligence",
+    "aiShowcaseTitle": "Innovation with Artificial Intelligence",
+    "aiShowcaseDescription": "Building smart solutions with LLMs, computer vision, and automation to increase productivity, reduce errors, and deliver higher business value.",
+    "referenceRepos": "Reference repositories",
+    "seeRepo": "View repository"
   },
   "experience": {
     "title": "Professional Experience",

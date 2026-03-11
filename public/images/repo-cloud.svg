@@ -1,0 +1,8 @@
+<svg width="800" height="420" viewBox="0 0 800 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="420" fill="#081B16"/>
+  <rect x="40" y="40" width="720" height="340" rx="20" fill="#0E2A24" stroke="#00FF88" stroke-opacity="0.45"/>
+  <text x="90" y="140" fill="#D8FFE7" font-size="48" font-family="Arial" font-weight="700">Cloud Architecture</text>
+  <text x="90" y="205" fill="#B4F3CE" font-size="28" font-family="Arial">Referências para soluções distribuídas</text>
+  <rect x="90" y="250" width="170" height="52" rx="26" fill="#00FF88" fill-opacity="0.18"/>
+  <text x="122" y="284" fill="#DEFFEB" font-size="22" font-family="Arial">DevOps</text>
+</svg>
