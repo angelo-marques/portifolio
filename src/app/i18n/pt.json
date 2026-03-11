@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "experience": "Experiencia",
+    "education": "Formacao",
+    "contact": "Contato"
+  },
+  "hero": {
+    "greeting": "Ola, eu sou",
+    "name": "Angelo Marques",
+    "title": "Tech Lead | Senior Software Developer",
+    "subtitle": "Especialista C# .NET | ASP.NET Core | Web API | Cloud Solutions | IA Solutions",
+    "cta": "Conheca meu trabalho",
+    "download": "Download CV",
+    "yearsExp": "+18 anos de experiencia"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "description": "Sou Desenvolvedor Full Stack com mais de 18 anos de experiencia na area de tecnologia. Nos ultimos 11 anos venho me especializando em desenvolvimento de Aplicacoes Web, API REST, Mobile, Windows plataforma, e em diversas tecnologias do mercado.",
+    "description2": "Utilizo em meus projetos os padroes importantes da atualidade, como Test Driven Development (TDD), Domain-Driven Design (DDD), Behavior Driven Development (BDD) e S.O.L.I.D, Clean Code e Clean Architecture.",
+    "description3": "Tenho habilidade no gerenciamento do ciclo de desenvolvimento de software, abrangendo identificacao da necessidade, levantamento de requisitos, arquitetura de software, desenho do diagrama de fluxos, codificacao, teste da aplicacao e documentacao tecnica.",
+    "highlight1Title": "Lideranca",
+    "highlight1Desc": "Implantacao de metodologia agil em startup, capacitacao e coordenacao de equipe para modelo agil",
+    "highlight2Title": "Inovacao",
+    "highlight2Desc": "Projetos com IA usando Ollama e LLM llama 3.2 vision para resolucao de problemas",
+    "highlight3Title": "Arquitetura",
+    "highlight3Desc": "Padroes DDD, TDD, BDD, SOLID, Clean Code, Clean Architecture, CQRS",
+    "highlight4Title": "Cloud",
+    "highlight4Desc": "Migracao de infraestrutura Azure para AWS, GCP, Docker e Kubernetes",
+    "location": "Vitoria, Espirito Santo, Brasil",
+    "languages": "Idiomas",
+    "portuguese": "Portugues (Nativo)",
+    "english": "Ingles (Intermediario)",
+    "spanish": "Espanhol (Basico)"
+  },
+  "skills": {
+    "title": "Habilidades Tecnicas",
+    "subtitle": "Tecnologias e ferramentas que domino",
+    "backend": "Back-end",
+    "frontend": "Front-end",
+    "database": "Banco de Dados",
+    "cloud": "Cloud & DevOps",
+    "tools": "Ferramentas",
+    "methodologies": "Metodologias",
+    "softSkills": "Soft Skills",
+    "ai": "Inteligencia Artificial"
+  },
+  "experience": {
+    "title": "Experiencia Profissional",
+    "subtitle": "Minha trajetoria profissional",
+    "present": "Presente",
+    "remote": "Remoto"
+  },
+  "education": {
+    "title": "Formacao Academica",
+    "subtitle": "Minha formacao e certificacoes",
+    "certifications": "Certificacoes"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar sobre seu projeto?",
+    "email": "E-mail",
+    "phone": "Telefone",
+    "location": "Localizacao",
+    "sendMessage": "Enviar Mensagem",
+    "name": "Seu Nome",
+    "emailPlaceholder": "Seu E-mail",
+    "message": "Sua Mensagem",
+    "social": "Redes Sociais"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados",
+    "madeWith": "Feito com",
+    "and": "e",
+    "coffee": "muito cafe"
+  }
+}

@@ -1,0 +1,76 @@
+.footer {
+  padding: 3rem 0 1.5rem;
+  background: rgba(5, 5, 15, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  margin-bottom: 1.5rem;
+
+  .logo-bracket {
+    color: var(--accent);
+  }
+
+  .logo-text {
+    color: #fff;
+    margin: 0 4px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+
+  a {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.footer-bottom {
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+
+  p {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 0.5rem;
+  }
+
+  .made-with {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+
+    .heart {
+      color: #ff4757;
+      animation: heartbeat 1.5s ease infinite;
+    }
+
+    .coffee {
+      color: #c8a97e;
+    }
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}

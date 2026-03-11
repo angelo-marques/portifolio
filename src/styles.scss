@@ -1,0 +1,162 @@
+/* === CSS Reset & Variables === */
+:root {
+  --bg-primary: #0a0a1e;
+  --bg-secondary: #0d1025;
+  --accent: #00f3ff;
+  --accent-purple: #7b68ee;
+  --accent-green: #00ff88;
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.4);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* === Scrollbar === */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 243, 255, 0.3);
+  border-radius: 10px;
+  &:hover { background: rgba(0, 243, 255, 0.5); }
+}
+
+/* === Selection === */
+::selection {
+  background: rgba(0, 243, 255, 0.3);
+  color: #fff;
+}
+
+/* === Container === */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* === Section Headers === */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-tag {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  opacity: 0.7;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.title-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-purple));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+/* === Links === */
+a { color: inherit; text-decoration: none; }
+
+/* === Background Glow Effects === */
+.about,
+.skills,
+.experience,
+.education,
+.contact {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow orbs per section */
+.about::after,
+.skills::after,
+.experience::after,
+.education::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.about::after {
+  top: -10%;
+  right: -150px;
+  background: radial-gradient(circle, rgba(0, 243, 255, 0.04) 0%, transparent 70%);
+}
+
+.skills::after {
+  bottom: -10%;
+  left: -150px;
+  background: radial-gradient(circle, rgba(123, 104, 238, 0.04) 0%, transparent 70%);
+}
+
+.experience::after {
+  top: 20%;
+  right: -200px;
+  background: radial-gradient(circle, rgba(0, 255, 136, 0.03) 0%, transparent 70%);
+}
+
+.education::after {
+  bottom: -5%;
+  left: -100px;
+  background: radial-gradient(circle, rgba(0, 243, 255, 0.03) 0%, transparent 70%);
+}
+
+/* === Section Divider Decorations === */
+.about, .skills, .experience, .education, .contact {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(0, 243, 255, 0.3), transparent);
+    z-index: 1;
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .container { padding: 0 1.25rem; }
+  .section-header { margin-bottom: 3rem; }
+}

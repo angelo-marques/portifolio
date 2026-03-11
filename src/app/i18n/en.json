@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Angelo Marques",
+    "title": "Tech Lead | Senior Software Developer",
+    "subtitle": "C# .NET Specialist | ASP.NET Core | Web API | Cloud Solutions | AI Solutions",
+    "cta": "See my work",
+    "download": "Download CV",
+    "yearsExp": "+18 years of experience"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I am a Full Stack Developer with over 18 years of experience in technology. For the last 11 years I have been specializing in Web Applications, REST API, Mobile, Windows platform development, and various market technologies.",
+    "description2": "I use important modern patterns in my projects, such as Test Driven Development (TDD), Domain-Driven Design (DDD), Behavior Driven Development (BDD) and S.O.L.I.D, Clean Code and Clean Architecture.",
+    "description3": "I have expertise in managing the software development lifecycle, covering needs identification, requirements gathering, software architecture, flow diagram design, coding, application testing and technical documentation.",
+    "highlight1Title": "Leadership",
+    "highlight1Desc": "Agile methodology implementation in startup, team training and coordination for agile model",
+    "highlight2Title": "Innovation",
+    "highlight2Desc": "AI projects using Ollama and LLM llama 3.2 vision for problem solving",
+    "highlight3Title": "Architecture",
+    "highlight3Desc": "DDD, TDD, BDD, SOLID, Clean Code, Clean Architecture, CQRS patterns",
+    "highlight4Title": "Cloud",
+    "highlight4Desc": "Infrastructure migration from Azure to AWS, GCP, Docker and Kubernetes",
+    "location": "Vitoria, Espirito Santo, Brazil",
+    "languages": "Languages",
+    "portuguese": "Portuguese (Native)",
+    "english": "English (Intermediate)",
+    "spanish": "Spanish (Basic)"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies and tools I master",
+    "backend": "Back-end",
+    "frontend": "Front-end",
+    "database": "Databases",
+    "cloud": "Cloud & DevOps",
+    "tools": "Tools",
+    "methodologies": "Methodologies",
+    "softSkills": "Soft Skills",
+    "ai": "Artificial Intelligence"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "My professional journey",
+    "present": "Present",
+    "remote": "Remote"
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "My academic background and certifications",
+    "certifications": "Certifications"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk about your project?",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "sendMessage": "Send Message",
+    "name": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "message": "Your Message",
+    "social": "Social Media"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "and": "and",
+    "coffee": "lots of coffee"
+  }
+}
