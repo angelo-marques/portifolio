@@ -61,6 +61,7 @@ interface Experience {
                   </svg>
                   {{ exp.location }}
                 </span>
+                @let codeLines = getExperienceCode(exp);
                 <div class="experience-editor">
                   <div class="editor-header">
                     <div class="editor-dots">
@@ -77,12 +78,12 @@ interface Experience {
 
                   <div class="editor-body">
                     <div class="line-numbers">
-                      @for (line of getExperienceCode(exp); track $index; let n = $index) {
+                      @for (line of codeLines; track $index; let n = $index) {
                         <span>{{ n + 1 }}</span>
                       }
                     </div>
                     <div class="code-content">
-                      @for (line of getExperienceCode(exp); track $index) {
+                      @for (line of codeLines; track $index) {
                         <div class="code-line">{{ line }}</div>
                       }
                       <div class="code-line cursor-line">
@@ -96,6 +97,10 @@ interface Experience {
                     <span>{{ exp.period }}</span>
                   </div>
                 </div>
+
+                <p class="experience-summary">
+                  {{ translate.isPortuguese() ? exp.description_pt : exp.description_en }}
+                </p>
 
                 @if (
                   (translate.isPortuguese() ? exp.highlights_pt : exp.highlights_en).length > 0

@@ -17,20 +17,21 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1.4rem;
   margin-bottom: 3rem;
 }
 
 .skill-card {
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: linear-gradient(165deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015));
+  border: 1px solid rgba(255, 255, 255, 0.09);
   border-radius: 16px;
   padding: 1.5rem;
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: rgba(0, 243, 255, 0.2);
-    background: rgba(0, 243, 255, 0.02);
+    border-color: rgba(0, 243, 255, 0.28);
+    background: linear-gradient(165deg, rgba(0, 243, 255, 0.08), rgba(123, 104, 238, 0.05));
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.22);
     transform: translateY(-4px);
   }
 
@@ -76,8 +77,8 @@
     margin-bottom: 0.4rem;
 
     .skill-name {
-      font-size: 0.82rem;
-      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.84rem;
+      color: rgba(255, 255, 255, 0.8);
     }
 
     .skill-percent {
@@ -121,7 +122,7 @@
   .soft-tag {
     padding: 0.5rem 1.2rem;
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 50px;
     font-size: 0.82rem;
     color: rgba(255, 255, 255, 0.6);
@@ -138,9 +139,9 @@
 .ai-showcase {
   margin-bottom: 3rem;
   padding: 1.5rem;
-  border: 1px solid rgba(0, 243, 255, 0.14);
+  border: 1px solid rgba(0, 243, 255, 0.2);
   border-radius: 16px;
-  background: linear-gradient(135deg, rgba(0, 243, 255, 0.07), rgba(123, 104, 238, 0.05));
+  background: linear-gradient(135deg, rgba(0, 243, 255, 0.11), rgba(123, 104, 238, 0.08));
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 1.5rem;
@@ -219,7 +220,7 @@
 }
 
 .repo-card {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.02);
